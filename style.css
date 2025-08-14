@@ -42,9 +42,14 @@ button {
 button:hover { border-color: var(--accent); color: white; }
 
 .weeks {
-  display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 16px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
 }
+
 .card {
+  max-width: 1000px; /* adjust to taste (e.g., 1100px) */
+  margin: 0 auto; /* center the wide card */
   background: rgba(17,24,39,0.8);
   border: 1px solid #1f2937; border-radius: 12px; padding: 16px;
 }
