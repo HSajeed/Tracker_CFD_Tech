@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>CFD + ML 12-Week Tracker</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <h1>CFD + ML 12-Week Tracker</h1>
+    <p>Track goals, sub-goals, and deliverables across 12 weeks.</p>
+  </header>
+
+  <main>
+    <section class="dashboard">
+      <h2>Dashboard</h2>
+      <div class="progress-wrap">
+        <div class="progress-bar" id="overallBar" style="width:0%"></div>
+      </div>
+      <div class="progress-stats">
+        <span id="overallPct">0%</span> complete
+      </div>
+      <button id="exportBtn">Export Progress</button>
+      <button id="importBtn">Import Progress</button>
+      <input type="file" id="importFile" accept=".json" style="display:none"/>
+      <button id="resetBtn">Reset All</button>
+    </section>
+
+    <section class="weeks">
+      <!-- Week cards injected by JS -->
+      <div id="weeksContainer"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Hosted on GitHub Pages. Progress saved locally in this browser.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
